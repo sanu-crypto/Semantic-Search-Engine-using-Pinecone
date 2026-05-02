@@ -1,0 +1,605 @@
+Project diary:
+
+Date:aug12,2025
+work summary:
+our initial focus was on understanding the overall concept of early student performance prediction using artificial intelligence. We studied how student behavioral, academic, and engagement data can be used as inputs for predictive models. Special attention was given to understanding why deep learning models are suitable for such prediction tasks due to their ability to capture complex non-linear relationships in educational data.
+learnings:
+1.Gained foundational knowledge about student performance prediction systems.
+2.Understood why deep learning models are effective for educational data analysis.
+blockings:
+Initial difficulty in understanding how educational attributes translate into predictive features.
+working hours:3
+skills: python
+
+Date:aug13,2025
+work summary:
+The next phase involved studying the architecture and working mechanism of the PSO-DNN model. We explored how a Deep Neural Network is structured using input layers, hidden layers, and output layers. The role of Particle Swarm Optimization (PSO) in tuning DNN hyperparameters such as learning rate, number of layers, number of neurons, activation functions, and batch size was analyzed in detail through theoretical explanations and reference materials.
+learnings:
+1.Learned the internal working of DNN architecture.
+2.Understood how PSO is applied to optimize DNN hyperparameters efficiently.
+blockings:
+Complexity of understanding how optimization algorithms interact with neural networks.
+working hours:3
+skills: python
+
+Date:aug15,2025
+work summary:
+we focused on understanding how PSO evaluates and improves model performance. The concept of particles, fitness evaluation, and optimization cycles was studied. We analyzed how PSO uses model accuracy as a fitness function and iteratively improves solutions by updating particle positions. This phase helped in understanding how hyperparameter optimization contributes to model stability and performance improvement.
+learnings:
+1.Learned how PSO evaluates solutions using fitness scores.
+2.Understood the importance of hyperparameter optimization for stable and accurate predictions.
+blockings:
+1.Initial confusion regarding velocity and position update equations in PSO.
+2.Required additional reading to fully grasp PSO-DNN integration.
+working hours:3
+skills: python
+
+Date:aug19,2025
+work summary:
+The work began with setting up the development environment required for the project. Since the backend implementation was based on Python, Jupyter Notebook was configured inside VS Code to support interactive development. The focus was on ensuring that the environment could support machine learning and deep learning workflows smoothly.
+learnings:
+1.Learned how to configure VS Code for Jupyter-based ML projects.
+2.Understood the importance of an organized development environment for large AI projects.
+blockings:
+Faced initial configuration issues while linking Jupyter Notebook with VS Code.
+working hours:3
+skills: python
+
+Date:aug20,2025
+work summary:
+After setting up the environment, the required Python libraries and frameworks were installed. This included TensorFlow, Keras, NumPy, Pandas, and Scikit-learn. The objective was to prepare the system to handle deep learning model construction, optimization algorithms, and data preprocessing efficiently.
+learnings:
+1.Gained experience installing and managing ML/DL libraries.
+2.Understood compatibility requirements between different deep learning frameworks.
+Blockings:
+1.Dependency conflicts occurred due to version mismatches.
+2.Some libraries required updates to function correctly with Python.
+working hours:3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn.
+
+Date:aug22,2025
+work summary:
+we focused on importing and understanding essential preprocessing and evaluation tools. Utilities such as LabelEncoder, StandardScaler, train-test split methods, and evaluation metrics (accuracy, precision, recall, F1-score) were studied and tested. This step ensured readiness for handling real-world datasets before model training.
+Learnings:
+1.Understood the role of encoding and scaling in ML pipelines.
+2.Learned how evaluation metrics help measure model performance accurately.
+Blockings:
+Minor confusion in choosing appropriate preprocessing techniques for categorical and numerical data.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date:aug26,2025
+work summary:
+our initial focus was on implementing a standalone Deep Neural Network (DNN) model without any optimization technique. But we have imported ML models to compare with DNN. The xAPI-Edu dataset containing 481 instances and 17 attributes was loaded into the environment. The objective was to establish a baseline deep learning model that could later be compared with optimized and hybrid approaches.
+Learnings:
+1.Learned how to load and inspect a real-world educational dataset.
+2.Understood the importance of establishing a baseline model before optimization.
+3.Gained experience in comparing ML models with DNN.
+Blockings:
+Faced difficulty in understanding the structure and meaning of some dataset attributes initially.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning
+
+Date:aug28,2025
+work summary:
+The dataset preprocessing stage was carried out, which involved handling missing values, encoding categorical variables, and scaling numerical features. After preprocessing, the DNN architecture was designed with input, hidden, and output layers suitable for multi-class classification.
+Learnings:
+1.Gained hands-on experience with data preprocessing techniques.
+2.Understood how preprocessing directly affects DNN training performance.
+Blockings:
+1.Handling missing values required multiple preprocessing iterations.
+2.Choosing appropriate scaling methods took additional experimentation.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning,statistical analysis
+
+Date:aug29,2025
+work summary:
+The preprocessed dataset was used to train and evaluate the DNN model. Model parameters such as epochs and batch size were experimented with to achieve stable learning. After training, the DNN achieved an accuracy of approximately 90%, serving as a reference point for further optimization using metaheuristic algorithms.
+Learnings:
+1.Learned how to train and evaluate a DNN model end-to-end.
+2.Understood how epochs and batch size influence training behavior.
+Blockings:
+Faced difficulty in deciding the optimal number of epochs due to overfitting concerns.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning
+
+Date:sep02,2025
+work summary:
+now, we have removed the ML models and we did a fresh training and evaluation of the baseline DNN was performed to reconfirm earlier results. This step was necessary to ensure consistency before introducing any optimization technique. The baseline results were documented to enable a fair comparison with optimized models.
+Learnings:
+1.Understood the importance of re-validating baseline results before optimization.
+2.Learned how minor changes in preprocessing can affect DNN outcomes.
+Blockings:
+Minor inconsistencies in training accuracy required repeated executions.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date:sep03,2025
+work summary:
+The Particle Swarm Optimization (PSO) algorithm was introduced into the project. The PSO structure was studied and implemented to optimize DNN hyperparameters such as learning rate, number of neurons, number of layers, activation functions, and batch size. The PSO loop was integrated with the DNN training process.
+Learnings:
+1.Gained practical understanding of how PSO interacts with a DNN training pipeline.
+2.Learned how particles represent candidate hyperparameter solutions.
+Blockings:
+Difficulty in mapping PSO particles correctly to DNN hyperparameters during initial integration.
+Working Hours: 3
+skills:python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date:sep05,2025
+work summary:
+The PSO-optimized DNN model was executed and evaluated. Each particle’s fitness was calculated based on validation accuracy, and the model performance was compared against the baseline DNN. Initial results showed potential improvement, but stability issues were observed across multiple runs.
+Learnings:
+1.Learned how to compare baseline and optimized models systematically.
+2.Understood that optimization improves performance but may introduce instability.
+Blockings:
+Data flow between PSO iterations and DNN training caused debugging challenges.
+Working Hours: 3
+skills:python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date:sep09,2025
+work summary:
+now, we focused on evaluating the PSO-optimized DNN model using the fully preprocessed dataset. Multiple training runs were conducted to observe whether the optimized hyperparameters consistently improved performance over the baseline DNN. The evaluation helped identify early signs of generalization issues despite improved tuning.
+Learnings:
+1.Learned how optimized hyperparameters influence model behavior across different runs.
+2.Understood that optimization does not always guarantee consistent improvement.
+Blockings:
+Training time increased due to repeated PSO executions.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, statistical_analysis, Scikit-learn
+
+Date:sep10,2025
+work summary:
+A comparative analysis was performed between the baseline DNN and the PSO-optimized DNN. Additional performance metrics such as precision, recall, and F1-score were incorporated based on insights from existing research papers. This step improved the depth of evaluation beyond accuracy alone.
+Learnings:
+1.Gained clarity on why multiple metrics are necessary for reliable evaluation.
+2.Learned how class-wise performance affects overall model interpretation.
+Blockings:
+Metric values fluctuated across runs, making comparisons less straightforward.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, statistical_analysis,Scikit-learn
+
+Date:sep12,2025
+work summary:
+Feature engineering techniques were refined by reducing noise, normalizing input features, and removing redundant attributes. These changes were inspired by literature review findings. Despite these improvements, the PSO-DNN model still failed to reach the expected accuracy threshold, indicating deeper issues beyond hyperparameter tuning.
+Learnings:
+1.Understood how feature quality impacts learning more than model complexity.
+2.Learned to align feature engineering with model optimization strategies.
+Blockings:
+Early stopping sometimes triggered too soon, limiting learning potential.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, statistical_analysis, Scikit-learn
+
+Date:sep16,2025
+work summary:
+we began with focusing exclusively on the PSO–DNN hybrid model, without involving traditional machine learning models. A standardized DNN architecture was fixed using ReLU activation in hidden layers and softmax in the output layer to clearly observe the effects of PSO-based optimization on model performance.
+Learnings:
+1.Understood the importance of fixing the base architecture before optimization.
+2.Learned how activation functions impact convergence behavior.
+Blockings:
+Initial PSO runs showed inconsistent improvements across configurations.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date:sep17,2025
+work summary:
+Multiple experiments were conducted by varying epochs and batch sizes to analyze how PSO optimization time changes. It was observed that PSO required nearly 25 minutes per execution in certain configurations, especially when higher epoch values were used, making experimentation slow and resource-intensive.
+Learnings:
+1.Learned how PSO runtime scales with epochs and batch size.
+2.Understood the trade-off between optimization depth and computation cost.
+Blockings:
+Long execution time limited the number of experiments possible in a day.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date:sep19,2025
+work summary:
+we involved analyzing PSO behavior across repeated runs to understand optimization stability. Although ReLU and softmax consistently outperformed other activation functions, the overall training process remained slow, raising concerns about PSO’s practicality for large-scale tuning.
+Learnings:
+1.Learned that PSO may not be suitable for frequent retraining scenarios.
+2.Gained insight into performance stability versus execution efficiency.
+Blockings:
+Computational overhead of PSO made rapid iteration difficult.
+Working Hours: 3
+skills: same as above
+
+Date:sep22,2025
+work summary:
+The work started by evaluating the PSO–DNN model using higher epoch values (100) and batch size of 60. Although the model occasionally reached around 75% accuracy, the results were highly unstable and varied significantly between runs.
+learnings:
+1.Learned that increasing epochs alone does not guarantee higher accuracy.
+2.Understood how batch size affects convergence consistency.
+Blockings:
+Accuracy fluctuated heavily across executions.
+Working Hours: 3
+skills: same
+
+Date:sep24,2025
+work summary:
+Further analysis revealed that the random initialization of weights was influencing the model’s output. To reduce randomness and improve reproducibility, random seed control was added to the training pipeline.
+Learnings:
+1.Learned how random seeds influence reproducibility in deep learning.
+2.Understood the importance of fixing randomness for fair comparisons.
+Blockings:
+Initial seed implementation did not fully stabilize results.
+Working Hours: 2
+skills: same
+
+Date:Sep26,2025
+Work Summary:
+After applying seed reproducibility, experiments were repeated to check stability improvements. Although slight consistency was observed, the PSO–DNN model still failed to consistently exceed 80% accuracy, indicating deeper issues beyond randomness.
+Learnings:
+1.Learned that reproducibility alone cannot solve performance instability.
+2.Gained insight into deeper causes such as data imbalance.
+Blockings:
+Performance instability persisted even after fixing random seeds.
+Working Hours: 2
+skills: same
+
+Date:oct01,2025
+Work Summary:
+Initial analysis showed that even after tuning epochs, batch sizes, and applying seed reproducibility, the PSO–DNN model continued to show unstable accuracy. Multiple training runs produced inconsistent results, indicating that the issue was not fully resolved at the optimization level.
+Learnings:
+1.Understood that hyperparameter tuning alone cannot guarantee stability.
+2.Learned that data-related issues can dominate model behavior.
+Blockings:
+Accuracy fluctuated despite controlled training settings.
+Working Hours: 2
+skills: same
+
+Date:oct03,2025
+Work Summary:
+A deeper investigation revealed that the dataset was highly imbalanced, causing biased learning toward majority classes. Based on this observation, we decided to apply SMOTE (Synthetic Minority Oversampling Technique) to balance the class distribution.
+Learnings:
+1.Learned how class imbalance affects learning and prediction bias.
+2.Understood the theoretical working of SMOTE for oversampling minority classes.
+Blockings:
+Initial confusion in selecting appropriate SMOTE parameters.
+Working Hours: 2
+skills: same
+
+Date:oct04,2025
+work summary:
+After applying SMOTE, the dataset was re-evaluated and retrained using PSO–DNN. The model showed improved stability in accuracy, confirming that data balancing played a critical role in performance consistency.
+Learnings:
+1.Gained practical experience using SMOTE in deep learning pipelines.
+2.Learned that balanced data improves both stability and fairness.
+Blockings:
+Oversampling slightly increased training time.
+Working Hours: 2
+skills: same and add statistical analysis
+
+Date:oct07,2025
+work summary:
+After achieving stability using SMOTE, the PSO–DNN model was analyzed further. Although the accuracy became stable, there was no noticeable improvement in accuracy level or runtime efficiency. This indicated that PSO might not be the most suitable optimization technique for the current dataset size and architecture.
+Learnings:
+1.Learned that model stability does not always imply performance improvement.
+2.Understood the need to evaluate optimization algorithms beyond accuracy alone.
+Blockings:
+PSO continued to consume high computational time despite stable results.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date:oct08,2025
+work summary:
+To address performance limitations, PSO was replaced with a Genetic Algorithm (GA) for hyperparameter optimization. PSO is an older algorithm than GA. GA was selected due to its evolutionary search strategy and relatively faster convergence. The GA was integrated to tune learning rate, number of neurons, layers, batch size, and epochs.
+Learnings:
+1.Understood the working principle of Genetic Algorithms.
+2.Learned how evolutionary operations like selection, crossover, and mutation guide optimization.
+Blockings:
+Initial effort was required to correctly encode DNN hyperparameters as chromosomes.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date:oct10,2025
+work summary:
+The GA-optimized DNN was trained and evaluated. While the accuracy level did not significantly increase compared to PSO–DNN, the training time and runtime performance improved noticeably. after comparing with other algorithms, confirming GA as a more efficient optimizer for the given setup.
+Learnings:
+1.Learned that GA can offer better runtime efficiency than PSO.
+2.Understood the importance of optimizer selection in large-scale experiments.
+Blockings:
+GA parameters still required fine-tuning for optimal results.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date:oct14,2025
+work summary:
+After finalizing the GA-optimized DNN, the next focus was to compare its performance with a strong machine learning model. For this purpose, XGBoost was selected due to its proven effectiveness in structured data classification tasks. The required XGBoost library was installed and imported into the project environment.
+Learnings:
+1.Learned why XGBoost is widely used for tabular and structured datasets.
+2.Understood how gradient boosting differs from deep learning approaches.
+Blockings:
+Initial installation and version compatibility issues with XGBoost.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning
+
+Date:oct15,2025
+work summary:
+XGBoost was trained independently on the same preprocessed dataset to evaluate its baseline performance. The results showed higher accuracy compared to the standalone GA-DNN, indicating that tree-based ensemble methods could capture feature interactions more effectively.
+Learnings:
+1.Understood how boosted decision trees handle feature importance and non-linear relationships.
+2.Learned how to configure basic XGBoost hyperparameters for classification.
+Blockings:
+Feature preprocessing needed re-verification to ensure compatibility with XGBoost input format.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning, statistical analysis
+
+Date: 17 Oct 2025
+Work Summary:
+Based on the superior performance of XGBoost, a hybrid modeling strategy was conceptualized. our idea was to combine GA-optimized deep feature learning from DNN with the strong classification capability of XGBoost. This marked the transition from a single-model approach to a hybrid GA-DNN + XGBoost framework.
+Learnings:
+1.Learned how hybrid models can combine strengths of deep learning and ensemble learning.
+2.Understood the concept of stacking and model integration.
+Blockings:
+Required careful planning to integrate two different model architectures.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning
+
+Date: 21 Oct 2025
+Work Summary:
+The focus of this phase was on feature enhancement and refinement to further improve the hybrid GA-DNN + XGBoost model. Existing behavioral and academic attributes were reviewed, and additional derived features were introduced to capture student engagement patterns more effectively.
+Learnings:
+1.Learned how feature engineering can significantly impact model performance.
+2.Understood the importance of domain knowledge while creating new features.
+Blockings:
+Initial feature additions introduced redundancy and noise in the dataset.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning
+
+Date: 22 Oct 2025
+Work Summary:
+After adding new features, multiple experimental runs were conducted to observe changes in accuracy and stability. The preprocessing pipeline was updated accordingly, including normalization and encoding steps, to ensure the newly added features were correctly handled by both the DNN and XGBoost models.
+Learnings:
+1.Gained experience in iteratively refining features based on experimental feedback.
+2.Learned how improper feature scaling can negatively affect model learning.
+Blockings:
+Some newly engineered features reduced performance and had to be removed.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning, statistical analysis
+
+Date: 24 Oct 2025
+Work Summary:
+After cleaning and optimizing the feature set, the hybrid model was retrained. The results showed consistent accuracy without degradation, confirming that the refined feature set maintained model stability. This phase reinforced the importance of careful feature selection over adding excessive variables.
+Learnings:
+1.Understood that more features do not always lead to better performance.
+2.Learned to balance feature richness and model simplicity.
+Blockings:
+Required repeated testing to identify the optimal feature subset.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning, statistical analysis
+
+Date: 28 Oct 2025
+Work Summary:
+our focus was on exploring an alternative optimization technique by replacing the Genetic Algorithm with Grey Wolf Optimization (GWO). The theoretical background of GWO was studied, including its inspiration from the leadership hierarchy and hunting behavior of grey wolves. The goal was to examine whether GWO could provide better hyperparameter tuning for the DNN.
+Learnings:
+1.Learned the core principles of Grey Wolf Optimization.
+2.Understood how alpha, beta, and delta wolves guide the optimization process.
+Blockings:
+Initial difficulty in mapping GWO parameters to DNN hyperparameters.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date: 29 Oct 2025
+Work Summary:
+GWO was integrated into the existing DNN pipeline to optimize hyperparameters such as learning rate, number of neurons, number of layers, and batch size. Several experimental runs were conducted to evaluate how GWO-guided tuning influenced model convergence and accuracy compared to GA-based optimization.
+Learnings:
+1.Gained experience implementing a new metaheuristic optimizer within a deep learning workflow.
+2.Learned how optimizer choice affects convergence behavior and training time.
+Blockings:
+GWO required multiple iterations to stabilize, increasing computational cost.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date: 31 Oct 2025
+Work Summary:
+After completing multiple experiments, the performance of the GWO-DNN + XGBoost model was compared with the GA-DNN + XGBoost hybrid model. The results showed nearly identical accuracy levels, with no significant improvement from GWO. Based on stability and consistency considerations, the decision was made to proceed with the GA-DNN + XGBoost hybrid approach for the final system.
+Learnings:
+1.Learned how to objectively compare optimization algorithms using empirical results.
+2.Understood that theoretical improvements do not always translate into practical gains.
+Blockings:
+Hyperparameter sensitivity caused slight variations across different GWO runs.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning
+
+Date: 04 Nov 2025
+Work Summary:
+our focus was on improving overall model performance by expanding the dataset. Instead of adding an external dataset, the original xAPI dataset was manually extended by increasing the number of instances while preserving the same attributes. This step was taken to provide more training samples for the model and reduce overfitting caused by limited data.
+Learnings:
+1.Understood the importance of dataset size in improving model generalization.
+2.Learned how limited data can restrict the learning capacity of deep models.
+Blockings:
+Initial uncertainty on how to expand the dataset without introducing bias.
+Working Hours: 3
+skills: data modeling
+
+Date: 05 Nov 2025
+Work Summary:
+The dataset expansion process was carried out by restructuring and replicating records carefully, increasing the dataset size from 481 instances to approximately 2500 rows. Special attention was given to maintaining attribute consistency, formatting correctness, and class label integrity to ensure the expanded dataset remained compatible with the existing preprocessing pipeline.
+Learnings:
+1.Learned how to restructure and scale datasets while preserving feature consistency.
+2.Gained practical experience in preparing large datasets for ML workflows.
+Blockings:
+Dataset merging issues occurred due to inconsistent column ordering and formatting.
+Working Hours: 2
+skills: data modeling, statistical analysis
+
+Date: 07 Nov 2025
+Work Summary:
+After dataset expansion, preliminary checks were performed to validate the dataset structure, class distribution, and missing values. The expanded dataset was prepared for integration into the GA-DNN and hybrid model pipelines. This phase ensured the dataset was ready for preprocessing, balancing, and training in later stages.
+Learnings:
+1.Understood how dataset expansion impacts preprocessing and scaling steps.
+2.Learned the importance of validating datasets before model execution.
+Blockings:
+Missing values and formatting inconsistencies required additional cleaning steps.
+Working Hours: 2
+skills: data modeling, statistical analysis
+
+Date: 11 Nov 2025
+Work Summary:
+the expanded dataset created earlier was integrated into the existing GA-DNN implementation. The primary goal was to analyze how the GA-optimized DNN behaved when trained on a much larger dataset. Initial execution attempts revealed several inconsistencies in the dataset structure, which prevented smooth model execution.
+Learnings:
+1.Learned how increasing dataset size directly impacts training behavior and execution flow.
+2.Understood the importance of verifying dataset compatibility before model integration.
+Blockings:
+Runtime errors occurred due to mismatched dataset formats.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn
+
+Date: 12 Nov 2025
+Work Summary:
+During further analysis, multiple data-related issues were identified, including inconsistent class labels, missing values, and incorrect data types. These problems caused preprocessing failures, particularly during label encoding and scaling. Efforts were focused on identifying the root causes rather than applying temporary fixes.
+Learnings:
+1.Gained deeper insight into how data quality affects deep learning pipelines.
+2.Learned to systematically trace preprocessing errors back to dataset inconsistencies.
+Blockings:
+Incorrect label formats caused repeated preprocessing failures.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, data modeling
+
+Date: 14 Nov 2025
+Work Summary:
+After identifying the issues, initial cleaning and validation steps were planned to correct label formats, handle missing values, and align feature scales. Although the model was not fully executed on this day, the groundwork for successful preprocessing and training on the expanded dataset was established.
+Learnings:
+1.Understood the necessity of structured data validation before training large models.
+2.Learned how scaling mismatches can break the entire training pipeline.
+Blockings:
+Scaling errors due to improperly cleaned rows delayed model execution.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, statistical analysis
+
+Date: 18 Nov 2025
+Work Summary:
+our primary focus was debugging preprocessing failures encountered during the previous attempts to train the GA-DNN model on the expanded dataset. Special attention was given to identifying label encoding issues that caused model execution to halt.
+Learnings:
+1.Learned how incorrect class label values can break supervised learning pipelines.
+2.Understood the importance of validating label ranges before model training.
+Blockings:
+Presence of invalid class labels (e.g., “Class = 3”) caused repeated training errors.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, statistical analysis
+
+Date: 19 Nov 2025
+Work Summary:
+After correcting label encoding mismatches, efforts were directed toward handling missing values and empty rows in the expanded dataset. These issues were particularly problematic during feature scaling using the StandardScaler, which failed when encountering invalid or empty data rows.
+Learnings:
+1.Gained hands-on experience in resolving StandardScaler errors caused by empty or corrupted rows.
+2.Learned how missing values propagate errors in later preprocessing stages.
+Blockings:
+Empty rows caused repeated failures in scaling operations.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, statistical analysis
+
+Date: 21 Nov 2025
+Work Summary:
+Once preprocessing issues were resolved, the GA-DNN model was successfully trained on the expanded dataset. The model achieved an accuracy of approximately 82%, indicating that while GA-DNN was effective, further optimization or hybridization would be required to improve stability and generalization.
+Learnings:
+1.Understood the difference between acceptable accuracy and stable, generalized performance.
+2.Learned that increased data volume alone does not guarantee better model accuracy.
+Blockings:
+Performance plateau at ~82% highlighted the need for additional modeling strategies.
+Working Hours: 3
+skills: same
+
+Date: 25 Nov 2025
+Work Summary:
+we focused on integrating the expanded dataset into the GA-DNN + XGBoost hybrid architecture. The GA-optimized DNN was used as the base learner, and preparations were made to combine its outputs with XGBoost for improved prediction capability.
+Learnings:
+1.Understood how DNN outputs can be reused as enhanced features for ensemble-based models.
+2.Learned the conceptual workflow of hybrid deep learning and gradient boosting integration.
+Blockings:
+Initial uncertainty in aligning the DNN pipeline with XGBoost input requirements.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning
+
+Date: 26 Nov 2025
+Work Summary:
+now, feature engineering and class balancing were emphasized. Additional predictive features were engineered, and the SMOTE technique was applied again to handle class imbalance in the larger dataset before training the hybrid model.
+Learnings:
+1.Gained deeper understanding of how SMOTE behaves in higher-dimensional feature spaces.
+2.Learned that feature engineering plays a critical role in improving model generalization.
+Blockings:
+SMOTE generated errors on categorical and improperly encoded features.
+Working Hours: 2
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning
+
+Date: 28 Nov 2025
+Work Summary:
+After resolving SMOTE compatibility and feature alignment issues, the GA-DNN + XGBoost hybrid pipeline was executed successfully. The model achieved a stable accuracy of 91%, representing a significant improvement over the standalone GA-DNN model.
+Learnings:
+1.Understood how hybrid models outperform single-model approaches in terms of stability.
+2.Learned the importance of feature consistency between deep learning and boosting models.
+Blockings:
+Feature mismatch between DNN outputs and XGBoost inputs required careful debugging.
+Working Hours: 2
+skills: same
+
+Date: 02 Dec 2025
+Work Summary:
+we began with reviewing the complete GA-DNN + XGBoost hybrid pipeline to identify inconsistencies in preprocessing and feature flow. Particular attention was given to ensuring that categorical encodings, numerical scaling, and engineered features remained consistent across all stages of training and testing. This review helped detect minor mismatches in feature ordering and encoding that could affect hybrid model stability.
+Learnings:
+1.Understood how small inconsistencies in preprocessing can impact hybrid model performance.
+2.Learned the importance of feature alignment when multiple models are combined.
+Blockings:
+Feature ordering mismatches caused unexpected runtime errors during initial testing.
+Working Hours: 2
+skills: same
+
+Date: 03 Dec 2025
+Work Summary:
+multiple controlled experiments were conducted to validate the robustness of the hybrid pipeline. The model was executed several times using the same random seed to check reproducibility. Data shapes at every stage—from GA-optimized DNN outputs to XGBoost inputs—were verified and corrected where necessary. These repeated runs helped confirm that the pipeline was functioning consistently across executions.
+Learnings:
+1.Learned how reproducibility testing helps validate model reliability.
+2.Gained experience in verifying data shapes across complex ML pipelines.
+Blockings:
+Inconsistent feature dimensions initially caused failures during repeated runs.
+Working Hours: 3
+skills: same
+
+Date: 05 Dec 2025
+Work Summary:
+After resolving pipeline inconsistencies, the final hybrid model was executed multiple times to confirm performance stability. The GA-DNN + XGBoost model consistently achieved around 91% accuracy across runs, demonstrating robustness on the expanded dataset. This phase confirmed that preprocessing, feature engineering, and hybrid integration were correctly aligned, preparing the system for final explainability integration in the next stage.
+Learnings:
+1.Understood how stability across runs indicates a mature ML pipeline.
+2.Learned how end-to-end validation strengthens confidence in final results.
+Blockings:
+No major blockers after final alignment; only minor tuning adjustments were needed.
+Working Hours: 2
+skills: same
+
+Date: 10 Dec 2025
+Work Summary:
+our focus was to study and plan the integration of Explainable AI (XAI) techniques into the finalized GA-DNN + XGBoost hybrid model. The need for interpretability was identified to better understand how classroom engagement and behavioral features influenced prediction outcomes. During this stage, we analyzed different explainability approaches and finalized SHAP and LIME as suitable tools because they support both deep learning and ensemble-based models. We reviewed their working principles, requirements, and compatibility with hybrid architectures.
+Learnings:
+1.Understood the concept and importance of Explainable AI in machine learning systems.
+2.Learned the theoretical working of SHAP and LIME and how they explain model predictions.
+3.Realized the importance of model transparency in educational prediction systems.
+Blockings:
+1.Limited initial understanding of how XAI tools interact with hybrid models.
+2.Needed additional reading to differentiate between global and local explanations.
+Working Hours: 3
+skills: same and add statistical analysis
+
+Date: 11 Dec 2025
+Work Summary:
+SHAP and LIME were practically integrated into the project environment. Additional dependencies and libraries were required, which led to installation and compatibility issues. The Python environment was updated, missing packages were installed, and version conflicts were resolved. Once the environment was stabilized, SHAP and LIME were connected to the GA-DNN + XGBoost pipeline. Initial execution attempts resulted in errors related to data shape mismatches, which were debugged by aligning feature formats between the hybrid model and explainability tools.
+Learnings:
+1.Learned how to install and configure SHAP and LIME in a deep learning environment.
+2.Gained experience in resolving dependency and version compatibility issues.
+3.Understood the importance of consistent data shapes for explainability analysis.
+Blockings:
+1.Installation errors due to missing or incompatible libraries.
+2.Data shape mismatches caused SHAP and LIME to fail during early runs.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning,HTML
+
+Date: 12 Dec 2025
+Work Summary:
+After successful integration, SHAP and LIME were used to generate visual explanations for model predictions. Feature importance plots and local explanations were analyzed to understand which engagement and classroom attributes had the highest influence on student performance prediction. These explanations helped validate the model’s behavior and ensured it was learning meaningful patterns rather than noise. The hybrid model maintained a stable accuracy of around 91%, confirming that explainability integration did not degrade performance. This phase concluded the project with both high accuracy and interpretability.
+Learnings:
+1.Learned how to interpret SHAP summary plots and LIME explanations.
+2.Understood how explainability helps validate and trust AI models in real-world applications.
+3.Gained confidence in analyzing model decisions beyond accuracy metrics.
+Blockings:
+1.Initial difficulty in interpreting SHAP plots correctly.
+2.Required multiple trials to generate clear and meaningful visual explanations.
+Working Hours: 3
+skills: python,TensorFlow, Keras, NumPy, Pandas, Scikit-learn, machine learning,HTML
