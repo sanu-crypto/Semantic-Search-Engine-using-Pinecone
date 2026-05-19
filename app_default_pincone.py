@@ -7,7 +7,7 @@ import html
 import uuid
 
 # ---------------- CONFIG ---------------- #
-PINECONE_API_KEY = "pcsk_69sqiG_6aLELqcAFim6vM7cpbMyTFWtKtwa7kt7d2xFc5f2vnnm3ha7EthKUbgNaHi2BA5"
+PINECONE_API_KEY = "pcsk_69sqiG_6aLELqcAF*********************************************gNaHi2BA5"
 
 # 🔥 UNIQUE INDEX EVERY RUN (NO ERRORS EVER)
 INDEX_NAME = f"semantic-search-{uuid.uuid4().hex[:6]}"
